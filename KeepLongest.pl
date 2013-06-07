@@ -52,8 +52,8 @@ while (<FH>)
 	    }
 	}
     }
-    
 }
+
 
 #print "The total number of sequences are $total\n";
 
@@ -65,4 +65,5 @@ for $name(@uniquearray)
 }
 
 #print "the number of unique names are $numunique\n";
-
+}
+}
