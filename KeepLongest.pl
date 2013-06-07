@@ -1,8 +1,20 @@
 #!usr/bin/perl
 
+
+system "ls -l *.fasta >filenames";
+
+open FH, "<filenames";
+
+while (<FH>)
+	{
+		if (/(Cluster\.(\d+)\.fasta)/)
+			{
+				$title=$1;
+				$num=$2;
+				
 #$numclust=1;
-open OUT, ">unique.$title";
-open FH, $ARG ;
+open OUT, ">Cluster.$num.unique.fasta";
+open FH, "<Cluster.$num.fasta" ;
 while (<FH>)
 {
     if (/^>gi\|(\S+?)\|gb\|\S+?\|(\D+?\s\D+?)\s+/)
