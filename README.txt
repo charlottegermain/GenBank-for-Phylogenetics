@@ -15,7 +15,7 @@ The scripts should be used in this order:
 3. GetFasta.pl
 	This will convert the Sequence IDs into a fasta file with the actual sequences
 
-4. BlastnCommandLine.txt
+4. BlastclustCommandLine.txt
 	This is the command line to blast the nucleotide data against itself using blastclust
 	
 5. makeclusters.pl
